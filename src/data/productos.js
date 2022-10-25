@@ -39,6 +39,14 @@ const productos = [
         categorie: 'cat01',
         amount: 1,
     },
+    {
+        id: 'sku006',
+        title: 'Producto 06',
+        text:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum sem quis congue gravida. Fusce feugiat porta quam, at congue velit blandit at. Etiam porta gravida lacus in elementum. Ut sagittis facilisis massa at malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean non euismod erat. Fusce vitae vehicula quam. Sed nisl lorem, porta vel augue vehicula, elementum molestie massa.',
+        img: './assets/img/MockUp IG_2-D.png',
+        categorie: 'cat02',
+        amount: 1,
+    },
 ]
 
 const navButtos =[
