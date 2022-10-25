@@ -2,36 +2,45 @@
 // import { TemplateString } from "./components/fundamentos/02-TemplateString";
 
 import './App.css'
+
 // import { JsFunction } from "./components/fundamentos/05-JsFunction";
 // import { ObjetosLiterales } from "./components/fundamentos/03-Object";
 // import { JsArray } from "./components/fundamentos/04-Array";
-
-import { CardGrid } from "./components/CardGrid/CardGrid";
-import { productos } from "./data/productos";
+// import { CardGrid } from "./components/CardGrid/CardGrid";
+// import { productos } from "./data/productos";
 // import { DesestObj } from "./components/fundamentos/06-DesestObj";
 // import { MiPrimerComp } from "./components/MiPrimerComp/MiPrimerComp";
 // import { DesestArray } from "./components/fundamentos/07-DesestArray";
+// import { HeroBanner } from "./components/HeroBanner/HeroBanner";
+// import { FtechApi } from './components/FethApi/FtechApi';
+// import { Map } from "./components/fundamentos/04-1-Map";
+
 import { NavBar } from "./components/NavBarPP/NavBar";
 import { Footer } from "./components/Footer/Footer";
-import { HeroBanner } from "./components/HeroBanner/HeroBanner";
-import { FtechApi } from './components/FethApi/FtechApi';
-// import { Map } from "./components/fundamentos/04-1-Map";
+import { Route, Routes } from 'react-router-dom'; // importacion de componentes de Router Dome
+import { Home } from './components/pages/Home';
+import { Pp2 } from './components/pages/pp2';
+import { About } from './components/pages/About';
+import { Contact } from './components/pages/Contact';
 
 
 function App() {
   //  console.log(dataProducts)
   return (
     <>
+
     <NavBar />
-    
-    <HeroBanner />
-    
-    <FtechApi />
 
-    <CardGrid data={productos}/>
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/pp2" element={<Pp2 />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
 
 
-
+      </Routes>
+      
     <Footer />
 
     </>

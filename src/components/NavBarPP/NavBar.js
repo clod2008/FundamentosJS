@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import { logo } from '../../assets';
 import { LogoSvg, } from '../../assets/svg/logoSvg';
 import { navButtos } from '../../data/productos';
@@ -27,7 +28,7 @@ export const NavBar = () => {
                     <ul className='navbar-nav'>
                         {navButtos.map(
                             ({ text, link }) => (<li key={text} className='nav-item'>
-                                <a className='nav-link' aria-current='page' href={link} target='_blanck'> {text} </a>
+                                <Link className='nav-link' aria-current='page' to={link} target='_self'> {text} </Link>
                             </li>)
                         )}
                     </ul>
