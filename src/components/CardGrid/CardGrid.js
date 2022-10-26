@@ -1,12 +1,9 @@
 import React from 'react'
 import { BtnMain } from '../BtnMain'
 
-
+// Este componente recibe los datos dentro de la propiedad {data} la cual es enviada desde Home.js
 export const CardGrid = ({data}) => {
-    const filtrado = (data)=>{
-        // console.log(data)
-    }
-    filtrado()
+
   return (
     <>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
