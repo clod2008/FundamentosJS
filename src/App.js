@@ -22,6 +22,8 @@ import { Home } from './components/pages/Home';
 import { Pp2 } from './components/pages/pp2';
 import { About } from './components/pages/About';
 import { Contact } from './components/pages/Contact';
+import { CartProvider } from './components/context/CartContex';
+
 
 
 function App() {
@@ -29,8 +31,8 @@ function App() {
   return (
     <>
 
+    <CartProvider>
     <NavBar />
-
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -40,6 +42,7 @@ function App() {
 
 
       </Routes>
+    </CartProvider>
       
     <Footer />
 

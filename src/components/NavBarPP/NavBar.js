@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 // import { logo } from '../../assets';
 import { LogoSvg, } from '../../assets/svg/logoSvg';
 import { navButtos } from '../../data/productos';
+import { Cart } from '../cart/Cart';
 import './NavBar.css'
 
 export const NavBar = () => {
@@ -31,6 +32,9 @@ export const NavBar = () => {
                                 <Link className='nav-link' aria-current='page' to={link} target='_self'> {text} </Link>
                             </li>)
                         )}
+                        <li>
+                            <Cart />
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -6,6 +6,7 @@ const productos = [
         img: './assets/img/MockUp IG_1-I.png',
         categorie: 'cat01',
         amount: 1,
+        price: 100,
     },
     {
         id: 'sku002',
@@ -14,6 +15,7 @@ const productos = [
         img: './assets/img/MockUp IG_1-C.png',
         categorie: 'cat02',
         amount: 1,
+        price: 100,
     },
     {
         id: 'sku003',
@@ -22,6 +24,7 @@ const productos = [
         img: './assets/img/MockUp IG_1-D.png',
         categorie: 'cat01',
         amount: 1,
+        price: 100,
     },
     {
         id: 'sku004',
@@ -30,6 +33,7 @@ const productos = [
         img: './assets/img/MockUp IG_2-I.png',
         categorie: 'cat02',
         amount: 1,
+        price: 100,
     },
     {
         id: 'sku005',
@@ -38,6 +42,7 @@ const productos = [
         img: './assets/img/MockUp IG_2-C.png',
         categorie: 'cat01',
         amount: 1,
+        price: 100,
     },
     {
         id: 'sku006',
@@ -46,6 +51,7 @@ const productos = [
         img: './assets/img/MockUp IG_2-D.png',
         categorie: 'cat02',
         amount: 1,
+        price: 100,
     },
 ]
 

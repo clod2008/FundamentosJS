@@ -7,7 +7,7 @@ export const CardGrid = ({data}) => {
   return (
     <>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
-            {data.map(({id, title, text, img}) => (
+              {data.map(({ id, title, text, img}) => (
                 <div className='col'key={id}>
                     <div className='card'>
                         <img src={img} className='card-img-top' alt={title}/>

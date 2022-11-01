@@ -5,3 +5,17 @@
 .navbar-brand object{
     width: 150px;
 }
+
+@media (min-width: 990px) {
+    nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        
+    }
+
+    nav ul li:last-child{
+        margin-left: 2em;
+    }
+}
